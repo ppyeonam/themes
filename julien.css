@@ -214,7 +214,7 @@ code {
 .cm-s-julien span.cm-variable-3 {color: #df9ae9;}
 .cm-s-julien span.cm-property {color: #cdaad2;}
 .cm-s-julien span.cm-operator {color: #ff007f;}
-.cm-s-julien span.cm-comment {font-size:1.2em;color: #8c8c8c;font-family:'나눔고딕' !important;letter-spacing:1px}
+.cm-s-julien span.cm-comment {font-size:1.2em;color: #8c8c8c;font-family:'나눔고딕','나눔고딕OTF','Apple SD Gothic Neo' !important;letter-spacing:1px}
 .cm-s-julien span.cm-string {color: #bed278}
 .cm-s-julien span.cm-string-2 {color: #ece47e;}
 .cm-s-julien span.cm-meta {color: #69be82;}
