@@ -235,7 +235,7 @@ code {
 .cm-s-julien span.CodeMirror-matchingtag.cm-tag{color:#fff}
 .cm-s-julien span.CodeMirror-searching {
 	background-color: rgba(0,200,200,0.5);
-	box-shadow: 0 0 0 1px #009494;
+/*	box-shadow: 0 0 0 1px #009494;*/
 	color:#fff !important;
 }
 
