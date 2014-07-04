@@ -1,262 +1,98 @@
+.modal-bar{border-bottom:1px solid #46494b;background:#3c3f41 !important}
+textarea,input[type=text],input[type=password],input[type=datetime],input[type=datetime-local],input[type=date],input[type=month],input[type=time],input[type=week],input[type=number],input[type=email],input[type=url],input[type=search],input[type=tel],input[type=color],.uneditable-input{border:1px solid #333;background:#4f4f4f;color:#fff;box-shadow:inset 0 1px 0 #454545}
+textarea:focus,input[type=text]:focus,input[type=password]:focus,input[type=datetime]:focus,input[type=datetime-local]:focus,input[type=date]:focus,input[type=month]:focus,input[type=time]:focus,input[type=week]:focus,input[type=number]:focus,input[type=email]:focus,input[type=url]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=color]:focus,.uneditable-input:focus{border:1px solid #292929;background:#565656 !important;box-shadow:0 0 0 1px #4f615f inset}
+.modal-bar input.no-results{border:1px solid #3c3f41;background:#642033 !important;color:#fff;box-shadow:0 0 0 1px #c1256b inset}
+.modal-bar .button-icon{background-image:url(img/find-replace-sprites.svg)}
+.modal-bar .search-input-container #find-counter{color:#999}
+.modal-bar input.no-results + .error + #find-counter{color:#c1256b}
+::-webkit-input-placeholder{color:#eee}
+.btn{border:1px solid #2f2f2f;background-color:#404040;color:#787878;box-shadow:inset 0 1px 0 #4b4b4b;text-shadow:0 1px 1px rgba(255,255,255,0.2)}
+.btn:active{color:#eee;text-shadow:0 1px 1px rgba(0,0,0,0.2)}
+.btn:hover{background-color:#393939;color:#aaa}
+.btn:active:not([disabled]){background-color:#227a7a;background-position:0 -24px;box-shadow:inset 0 1px 0 #2d8181}
+.btn.disabled,.btn[disabled]{border:1px solid #555;background:#777;opacity:0.8}
+.modal-bar #find-regexp.active,.modal-bar #find-case-sensitive.active{background-color:#235a5a;box-shadow:inset 0 1px 0 #2e6262}
+.find-dialog-label{background:none;font-size:12px}
+.no-results + .find-dialog-label{color:#c1256b}
 #open-files-container{max-height:40% !important}
 .related-container .related li{color:#aaa !important}
 .related-container .related li.selected{color:#fff !important}
 .related-container .related li.selected .related-file{color:#ece47e !important}
-.cm-s-julien .CodeMirror-scroll{
-    border-color: #191919; !important
-}
+.cm-s-julien .CodeMirror-scroll{border-color:#191919}
+.cm-s-julien .inline-widget .CodeMirror-gutter,.cm-s-julien .inline-widget .inline-text-editor,.inline-widget .cm-s-julien.CodeMirror{background:#202020 !important}
+.CodeMirror .CodeMirror-vscrollbar{bottom:10px !important;width:10px}
 
- .cm-s-julien .inline-widget .CodeMirror-gutter,.cm-s-julien .inline-widget .inline-text-editor,.inline-widget .cm-s-julien.CodeMirror{background: #202020 !important}
-.CodeMirror .CodeMirror-vscrollbar{ width: 10px; bottom: 10px !important;} /*Scrollbar vertical. These values MUST be the same as height/width of scrollbars*/
-.CodeMirror .CodeMirror-hscrollbar{ height:10px; right:10px !important;} /*Scrollbar horizontal. These values MUST be the same as height/width of scrollbars*/
-.CodeMirror-scrollbar-filler {height:10px !important; width:10px !important;} /* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track*/
-.CodeMirror-gutter-filler{ height:10px !important;} /* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
+/* Scrollbar vertical. These values MUST be the same as height/width of scrollbars */
+.CodeMirror .CodeMirror-hscrollbar{right:10px !important;height:10px}
 
+/* Scrollbar horizontal. These values MUST be the same as height/width of scrollbars */
+.CodeMirror-scrollbar-filler{width:10px !important;height:10px !important}
 
-.CodeMirror ::-webkit-scrollbar { width: 10px; height:10px;background: transparent} /* The width of vertical scrollbars and height of horizontal scrollbars*/
-.cm-s-julien ::-webkit-scrollbar-track, .cm-s-julien .CodeMirror-gutter-filler, .cm-s-julien .CodeMirror-scrollbar-filler {
-    background: transparent;
-}
+/* Corner where scrollbars meet. Width and height MUST be the same as that of scrollbars. Background should be the same as that of the scrollbar track */
+.CodeMirror-gutter-filler{height:10px !important}
 
-.platform-win ::-webkit-scrollbar-thumb {
-    box-shadow:0 0 0 12px #454545 inset;
-    border-radius: 5px;
-}
-.cm-s-julien ::-webkit-scrollbar-thumb:hover {
-    box-shadow:0 0 0 12px #575757 inset;
-}
-.cm-s-julien ::-webkit-scrollbar-thumb:active {
-    box-shadow:0 0 0 12px #6a6a6a inset;
-}
+/* Linenumber area left of horizontal scrollbar. Height MUST be the same as width/height of scrollbars */
+.CodeMirror ::-webkit-scrollbar{width:10px;height:10px;background:transparent}
 
-
-
-#status-bar{ /* Bottom status bar */
-    border-top:1px solid #484b4d;
-    background:#3C3F41;
-    color:#FFF;
-}
-#main-toolbar{ background:#3C3F41;}
-
-.inline-widget{ /* Quick-edit styles */
-    background:rgb(51, 51, 51);
-}
-
-.inlineEditorHolder > div > .CodeMirror-wrap{
-    background:rgb(51, 51, 51);
-}
-
-.inlineEditorHolder .CodeMirror-linenumber{
-
-    background-color:rgb(51, 51, 51) !important;
-}
-
-.inline-widget .CodeMirror-gutter {
-    background-color: rgb(51, 51, 51) !important;
-}
-
-.divider-holder .divider {
-    margin-left: 12px;
-    width: 0;
-    height: 100%;
-    border-left: 1px solid rgb(0, 0, 0);
-    border-right: 1px solid rgb(73, 73, 73);
-}
+/* The width of vertical scrollbars and height of horizontal scrollbars */
+.cm-s-julien ::-webkit-scrollbar-track,.cm-s-julien .CodeMirror-gutter-filler,.cm-s-julien .CodeMirror-scrollbar-filler{background:transparent}
+.platform-win ::-webkit-scrollbar-thumb{border-radius:5px;box-shadow:0 0 0 12px #454545 inset}
+.cm-s-julien ::-webkit-scrollbar-thumb:hover{box-shadow:0 0 0 12px #575757 inset}
+.cm-s-julien ::-webkit-scrollbar-thumb:active{box-shadow:0 0 0 12px #6a6a6a inset}
+#status-bar{/* Bottom status bar */border-top:1px solid #484b4d;background:#3C3F41;color:#FFF}
+#main-toolbar{background:#3C3F41}
+.inline-widget{/* Quick-edit styles */background:#333}
+.inlineEditorHolder > div > .CodeMirror-wrap{background:#333}
+.inlineEditorHolder .CodeMirror-linenumber{background-color:#333 !important}
+.inline-widget .CodeMirror-gutter{background-color:#333 !important}
+.divider-holder .divider{width:0;height:100%;margin-left:12px;border-left:1px solid #000;border-right:1px solid #494949}
 
 /* changes to the related container */
-
-.related-container {
-    float: right;
-    position: relative;
-    min-height: 100%;
-    font-family: 'SourceSansPro', Helvetica, Arial, "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    width: 250px;
-    max-width: 50%;
-    overflow: hidden;
-    background: rgb(47, 47, 47);
-}
-
-.related-container .selection {
-    width: 100%;
-    background: rgb(111, 111, 111);
-    position: absolute;
-    -webkit-transition: height 0.1s ease-out;
-    -webkit-transition: top 0.1s ease-out;
-    border-top: 1px solid rgb(95, 95, 95);
-    border-bottom: 1px solid rgb(114, 114, 114);
-    top: 12px;
-}
-
-.related-container .related .selected {
-    color: rgb(236, 236, 236);
-    -webkit-transition: color 0.1s ease-out 0.15s;
-}
-.related-container .selection:before {
-    content: " ";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 9px solid rgba(255, 255, 255, 0);
-    border-bottom: 9px solid rgba(255, 255, 255, 0);
-    border-left: 9px solid #202020;
-    margin-top: -9px;
-    top: 50%;
-    -ms-transform: scaleX(0.9);
-    -moz-transform: scaleX(0.9);
-    -webkit-transform: scaleX(0.9);
-    -o-transform: scaleX(0.9);
-    transform: scaleX(0.9);
-    -ms-transform-origin: left top;
-    -moz-transform-origin: left top;
-    -webkit-transform-origin: left top;
-    -o-transform-origin: left top;
-    transform-origin: left top;
-}
-
+.related-container{overflow:hidden;float:right;position:relative;width:250px;max-width:50%;min-height:100%;background:#2f2f2f;font-family:'SourceSansPro',Helvetica,Arial,'Meiryo UI',' 나눔고딕',NanumGothic,'나눔고딕OTF',NanumGothicOTF}
+.related-container .selection{position:absolute;top:12px;width:100%;border-top:1px solid #5f5f5f;border-bottom:1px solid #727272;background:#6f6f6f;-webkit-transition:height .1s ease-out;-webkit-transition:top .1s ease-out}
+.related-container .related .selected{color:#ececec;-webkit-transition:color .1s ease-out .15s}
+.related-container .selection:before{position:absolute;top:50%;width:0;height:0;margin-top:-9px;border-top:9px solid rgba(255,255,255,0);border-bottom:9px solid rgba(255,255,255,0);border-left:9px solid #202020;content:' ';-ms-transform:scaleX(0.9);-moz-transform:scaleX(0.9);-webkit-transform:scaleX(0.9);-o-transform:scaleX(0.9);transform:scaleX(0.9);-ms-transform-origin:left top;-moz-transform-origin:left top;-webkit-transform-origin:left top;-o-transform-origin:left top;transform-origin:left top}
 
 /* End of related container changes */
-
-#not-editor:before {
-    content: " ";
-    height: 100%;
-    width: 100%;
-    display: -webkit-box;
-    position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    background: rgba(51, 51, 51, 0) url('file://localhost/Applications/Brackets%20Sprint%2027.app/Contents/www/styles/images/no_content_bg.svg') no-repeat center 45%;
-    opacity: .07;
-}
-
-#editor-holder #not-editor {
-    height: 100%;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    background: #242424;
-
-}
+#not-editor:before{display:-webkit-box;position:absolute;width:100%;height:100%;background:rgba(51, 51, 51, 0) url(file://localhost/Applications/Brackets%20Sprint%2027.app/Contents/www/styles/images/no_content_bg.svg) no-repeat center 45%;content:' ';-webkit-box-orient:vertical;-webkit-box-pack:center;-webkit-box-align:center;opacity:.07}
+#editor-holder #not-editor{display:-webkit-box;display:-moz-box;display:box;height:100%;background:#242424;-webkit-box-orient:vertical;-moz-box-orient:vertical;box-orient:vertical;-webkit-box-pack:center;-moz-box-pack:center;box-pack:center;-webkit-box-align:center;-moz-box-align:center;box-align:center}
 
 /* code refs */
-.css-prop-defn code {
-    font-family: SourceCodePro;
-    font-size: 12px;
-    color: rgb(197, 197, 197);
-    background: none;
-    padding: 0;
-}
-code {
-    padding: 2px 4px;
-    color: #d14;
-    background-color: rgb(158, 158, 158);
-    border: 1px solid rgb(122, 122, 122);
-    white-space: nowrap;
-}
+.css-prop-defn code{padding:0;background:none;font-family:SourceCodePro;font-size:12px;color:#c5c5c5}
+code{padding:2px 4px;border:1px solid #7a7a7a;background-color:#9e9e9e;color:#d14;white-space:nowrap}
+.css-prop-defn h1{margin:15px 0 9px;font-size:16px;font-weight:500;line-height:normal;color:#dbdbdb}
+.css-prop-defn{font-family:SourceSansPro;font-size:14px;color:#c5c5c5;cursor:auto}
+.css-prop-values dl dt{margin-bottom:3px;font-size:13px;font-weight:500;color:#dbdbdb}
 
+/* * CodeMirror styles * */
+.cm-s-julien.CodeMirror{background:#303030;color:#fff}
+.cm-s-julien div.CodeMirror-cursor{z-index:3;border-left:1px solid #f8f8f0}
+.CodeMirror-selected{background:#222;opacity:.8}
+.cm-s-julien span.cm-keyword{color:#eb0ab3}
+.cm-s-julien span.cm-atom{color:#5aa0a0}
+.cm-s-julien span.cm-number{color:#5aa0a0}
+.cm-s-julien span.cm-def{color:#ed9a10}
+.cm-s-julien span.cm-variable{color:#7bc6e2}
+.cm-s-julien span.cm-variable-2{color:#c48cff}
+.cm-s-julien span.cm-variable-3{color:#df9ae9}
+.cm-s-julien span.cm-property{color:#cdaad2}
+.cm-s-julien span.cm-operator{color:#ff007f}
+.cm-s-julien span.cm-comment{font-size:1.2em;font-family:'나눔고딕','나눔고딕OTF','Apple SD Gothic Neo' !important;color:#8c8c8c;letter-spacing:1px}
+.cm-s-julien span.cm-string{color:#bed278}
+.cm-s-julien span.cm-string-2{color:#ece47e}
+.cm-s-julien span.cm-meta{color:#69be82}
+.cm-s-julien span.cm-qualifier,.CodeMirror span.cm-builtin{color:#96b428}
+.cm-s-julien span.cm-bracket{color:#826e50}
+.cm-s-julien span.cm-tag{color:#a58c64}
+.cm-s-julien span.cm-attribute{color:#8cb4be}
+.cm-s-julien span.cm-matchhighlight{background-color:rgba(61,61,61,23)}
+.cm-s-julien span.CodeMirror-matchingbracket{color:#a7ec21}
+.cm-s-julien span.CodeMirror-matchingtag{background:rgba(255, 0, 180, 0.5)}
+.cm-s-julien span.CodeMirror-matchingtag.cm-bracket,.cm-s-julien span.CodeMirror-matchingtag.cm-tag{color:#fff}
+.cm-s-julien span.CodeMirror-searching{background-color:rgba(0,200,200,0.5);/* box-shadow: 0 0 0 1px #009494; */color:#fff !important}
 
-
-.css-prop-defn h1 {
-    color: rgb(219, 219, 219);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
-    margin: 15px 0 9px 0;
-}
-
-.css-prop-defn {
-    color: rgb(197, 197, 197);
-    cursor: auto;
-    font-family: SourceSansPro;
-    font-size: 14px;
-}
-
-.css-prop-values dl dt {
-    color: rgb(219, 219, 219);
-    font-size: 13px;
-    font-weight: 500;
-    margin-bottom: 3px;
-}
-
-
-/** CodeMirror styles **/
-
-.cm-s-julien.CodeMirror {
-	background:#303030;
-	color:#fff
-}
-
-.cm-s-julien div.CodeMirror-cursor {
-  border-left: 1px solid #f8f8f0;
-  z-index: 3;
-}
-
-.CodeMirror-selected {
-    background: #3d3d3d;
-    opacity: .23;
-}
-
-.cm-s-julien span.cm-keyword {color: #eb0ab3}
-.cm-s-julien span.cm-atom {color: #5aa0a0}
-.cm-s-julien span.cm-number {color: #5aa0a0}
-.cm-s-julien span.cm-def {color: #ed9a10}
-.cm-s-julien span.cm-variable {color: #7bc6e2}
-.cm-s-julien span.cm-variable-2 {color: #c48cff;}
-.cm-s-julien span.cm-variable-3 {color: #df9ae9;}
-.cm-s-julien span.cm-property {color: #cdaad2;}
-.cm-s-julien span.cm-operator {color: #ff007f;}
-.cm-s-julien span.cm-comment {font-size:1.2em;color: #8c8c8c;font-family:'나눔고딕','나눔고딕OTF','Apple SD Gothic Neo' !important;letter-spacing:1px}
-.cm-s-julien span.cm-string {color: #bed278}
-.cm-s-julien span.cm-string-2 {color: #ece47e;}
-.cm-s-julien span.cm-meta {color: #69be82;}
-.cm-s-julien span.cm-qualifier, .CodeMirror span.cm-builtin {color: #96b428}
-.cm-s-julien span.cm-bracket {color: #826e50;}
-.cm-s-julien span.cm-tag {color: #a58c64}
-.cm-s-julien span.cm-attribute {color: #8cb4be}
-.cm-s-julien span.cm-matchhighlight {background-color: rgba(61,61,61,23);}
-
-.cm-s-julien span.CodeMirror-matchingbracket {
-    color: #a7ec21;
-}
-
-.cm-s-julien span.CodeMirror-matchingtag {
-    background: rgba(255, 0, 180, 0.5)
-}
-.cm-s-julien span.CodeMirror-matchingtag.cm-bracket,
-.cm-s-julien span.CodeMirror-matchingtag.cm-tag{color:#fff}
-.cm-s-julien span.CodeMirror-searching {
-	background-color: rgba(0,200,200,0.5);
-/*	box-shadow: 0 0 0 1px #009494;*/
-	color:#fff !important;
-}
-
-.cm-s-julien .CodeMirror-gutters{
-    color: #727272;    
-	background-color: #1a1a1a !important;
-}
-.cm-s-julien .CodeMirror-linenumber{
-	
-}
-
-.cm-s-julien.CodeMirror .CodeMirror-linenumber {
-    padding-left: 18px;
-	padding-right:8px
-}
-
-.cm-s-julien span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedtext {
-    background-color: #c1ff83;
-    color: #242424;
-}
-.cm-s-julien.CodeMirror-focused .CodeMirror-activeline-background, .cm-s-julien.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-    background-color: #000;
-	color:#ff0;
-}
+.cm-s-julien .CodeMirror-gutters{background-color:#1a1a1a !important;color:#727272}
+.cm-s-julien .CodeMirror-linenumber{}
+.cm-s-julien.CodeMirror .CodeMirror-linenumber{padding-left:18px;padding-right:8px}
+.cm-s-julien span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedtext{background-color:#c1ff83;color:#242424}
+.cm-s-julien.CodeMirror-focused .CodeMirror-activeline-background,.cm-s-julien.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt{background-color:#000;color:#ff0}
