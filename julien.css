@@ -65,9 +65,9 @@ code{padding:2px 4px;border:1px solid #7a7a7a;background-color:#9e9e9e;color:#d1
 .css-prop-values dl dt{margin-bottom:3px;font-size:13px;font-weight:500;color:#dbdbdb}
 
 /* * CodeMirror styles * */
+.CodeMirror-selected{background:rgba(0,235,255,0.35)}
 .cm-s-julien.CodeMirror{background:#303030;color:#fff}
 .cm-s-julien div.CodeMirror-cursor{z-index:3;border-left:1px solid #f8f8f0}
-.CodeMirror-selected{background:#222;opacity:.8}
 .cm-s-julien span.cm-keyword{color:#eb0ab3}
 .cm-s-julien span.cm-atom{color:#5aa0a0}
 .cm-s-julien span.cm-number{color:#5aa0a0}
@@ -94,7 +94,6 @@ code{padding:2px 4px;border:1px solid #7a7a7a;background-color:#9e9e9e;color:#d1
 .cm-s-julien span.CodeMirror-searching.searching-last{border:1px solid #009494;border-width:1px 1px 1px 0}
 
 .cm-s-julien .CodeMirror-gutters{background-color:#1a1a1a !important;color:#727272}
-.cm-s-julien .CodeMirror-linenumber{}
 .cm-s-julien.CodeMirror .CodeMirror-linenumber{padding-left:18px;padding-right:8px}
 .cm-s-julien span.cm-matchhighlight.CodeMirror-searching.CodeMirror-selectedtext{background-color:#c1ff83;color:#242424}
 .cm-s-julien.CodeMirror-focused .CodeMirror-activeline-background,.cm-s-julien.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt{background-color:#000;color:#ff0}
