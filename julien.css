@@ -65,8 +65,8 @@ code{padding:2px 4px;border:1px solid #7a7a7a;background-color:#9e9e9e;color:#d1
 .css-prop-values dl dt{margin-bottom:3px;font-size:13px;font-weight:500;color:#dbdbdb}
 
 /* * CodeMirror styles * */
-.cm-s-julien div.CodeMirror-selected,.CodeMirror-selected{background:rgba(255,90,0,0.25) !important}
 .cm-s-julien.CodeMirror{background:#303030;color:#fff}
+.cm-s-julien div.CodeMirror-selected{background:rgba(255, 38, 130, 0.5) !important}
 .cm-s-julien div.CodeMirror-cursor{z-index:3;border-left:1px solid #f8f8f0}
 .cm-s-julien span.cm-keyword{color:#eb0ab3}
 .cm-s-julien span.cm-atom{color:#5aa0a0}
@@ -85,13 +85,13 @@ code{padding:2px 4px;border:1px solid #7a7a7a;background-color:#9e9e9e;color:#d1
 .cm-s-julien span.cm-bracket{color:#826e50}
 .cm-s-julien span.cm-tag{color:#a58c64}
 .cm-s-julien span.cm-attribute{color:#8cb4be}
-.cm-s-julien span.cm-matchhighlight{background-color:rgba(61,61,61,23)}
+.cm-s-julien span.cm-matchhighlight{background-color:rgba(61,61,61,.23)}
 .cm-s-julien span.CodeMirror-matchingbracket{color:#a7ec21}
 .cm-s-julien span.CodeMirror-matchingtag{background:rgba(255, 0, 180, 0.5)}
 .cm-s-julien span.CodeMirror-matchingtag.cm-bracket,.cm-s-julien span.CodeMirror-matchingtag.cm-tag{color:#fff}
-.cm-s-julien span.CodeMirror-searching{background-color:rgba(0,200,200,0.5);border:1px solid #009494;border-width:1px 0;color:#fff !important}
-.cm-s-julien span.CodeMirror-searching.searching-first{border:1px solid #009494;border-width:1px 0 1px 1px}
-.cm-s-julien span.CodeMirror-searching.searching-last{border:1px solid #009494;border-width:1px 1px 1px 0}
+.cm-s-julien span.CodeMirror-searching{background-color:rgba(255,255,255,0.1);border:1px solid rgba(255, 38, 130,0.7);border-width:1px 0;color:#fff !important}
+.cm-s-julien span.CodeMirror-searching.searching-first{border-width:1px 0 1px 1px}
+.cm-s-julien span.CodeMirror-searching.searching-last{border-right-width: 1px !important}
 
 .cm-s-julien .CodeMirror-gutters{background-color:#1a1a1a !important;color:#727272}
 .cm-s-julien.CodeMirror .CodeMirror-linenumber{padding-left:18px;padding-right:8px}
